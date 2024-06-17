@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* START CUSTOM STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #2c2c2c;
+}
+
+.active {
+  box-shadow: 0 0 10px 1px rgba(30, 30, 30, .7);
+  border-radius: 4px;
+  background: linear-gradient(118deg, rgb(30, 30, 30), rgba(30, 30, 30, .7));
+  color: #fff !important;
+  font-weight: 400 !important;
+
+}
+
+/* END CUSTOM STYLE */
+
+/* OVERRIDE antd STYLE */
+
+.ant-table-column-title {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.ant-table-cell {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.ant-table-wrapper .ant-table {
+  background: transparent !important;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0 1.3rem !important;
+}
+
+.ant-table-wrapper .ant-table-thead>tr>th {
+  background-color: transparent !important;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border: none !important;
+  transition: none;
+  white-space: nowrap;
+}
+
+.ant-table-wrapper .ant-table-thead>tr>th::before {
+  width: 0px !important;
+}
+
+.ant-table-row {
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .05);
+  transition: all .3s ease;
+  background: #fff;
+  cursor: pointer;
+}
+
+.ant-table-row>.ant-table-cell-row-hover {
+  background: transparent !important;
+
+}
+
+.ant-table-row:hover {
+  transform: translateY(-4px);
+}
+
+.ant-table-content {
+  overflow-x: auto;
+}
+
+.single-image-selector>.ant-upload-select {
+  width: 100% !important;
+}
+
+.ant-image {
+  width: auto;
+  height: 100%;
+}
+
+.multiple-images-selector>.ant-upload-list>.ant-upload {
+  min-width: 102px;
+  width: auto !important;
+  max-width: 200px;
+  padding: 0 12px;
+}
+
+.ant-select-selection-placeholder,
+.ant-select-selection-search-input {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* END OVERRIDE antd STYLE */
